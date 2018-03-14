@@ -1,0 +1,127 @@
+body {
+	margin:0;
+	padding:0;
+	color:#303030;
+	background-image: url("img/underwater-background.jpeg");
+	font:76% Verdana,Tahoma,sans-serif;
+}
+
+/*Nav Styling*/
+
+div.container
+{
+  font-family: Raleway;
+	text-align: center;
+  padding-top: 16px;
+  height: 38px;
+  background-color: transparent;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.teal
+{
+    background: #009688;
+}
+
+/*Nav Animation Styling Begins*/
+
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+/*Navbar Animation Styling Ends*/
+
+
+ul
+{list-style:circle; margin:15px 0 20px 0; font-size:20px;}
+
+li
+{margin:0 0 8px 25px; color: black;}
+
+a
+{color:#6B7457; font-weight:bold; text-decoration:none;}
+
+a:hover
+{color:#505050; text-decoration:underline;}
+
+img
+{float:left; margin:0 15px 15px 0; padding:1px; background:#ffffff; border:1px solid #d0d0d0;}
+
+a img
+{border-color:#d85d5d;}
+
+a img:hover
+{background:#d85d5d; border-color:#d85d5d;}
+
+#menu a {
+	display:block;
+	width:202px;
+	padding:5px 18px 5px 0;
+	color:#6B7457;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	border:#e0e0e0 solid 1px;
+}
+
+#menu a:hover {
+	color:#9AA680;
+	background:#f0f0f0;
+	border:#606060 solid 1px;
+	border-right:0px;
+}
+
+#content
+{width:620px; margin:0 0 0 340px; padding:20px 0; background: transparent;}
+
+#content p
+{margin:0 0 20px 0; line-height:1.5em; color: white; font-size: 18px;}
+
+#content h1
+{margin:0; color:#ffff66; font-size:4em; letter-spacing:-5px; text-align:center;}
+
+#content h2
+{margin:0; color:#ffff66; font-weight:normal; font-size:2.5em; letter-spacing:-2px; text-align:center;}
+
+#content h3
+{clear:both; margin:30px 0 10px 0; color:#ffff66; font-weight:normal; font-size: 2em; letter-spacing:-2px;}

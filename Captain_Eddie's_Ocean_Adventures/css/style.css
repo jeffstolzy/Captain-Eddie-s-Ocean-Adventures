@@ -1,43 +1,72 @@
 /*Nav Styling*/
-nav {
-  text-align: right;
+
+div.container
+{
+  font-family: Raleway;
+	text-align: center;
+  padding-top: 16px;
+  height: 38px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 1;
   flex-grow: 1;
 }
 
-nav span {
-  display: inline-block;
-  padding: 20px 10px;
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }
 
-header {
-  border-bottom: 1px solid seashell;
-  height: 50px;
-  position: fixed;
-  background-color: black;
-  width: 100%;
-  z-index: 1;
-  align-items: center;
+.teal
+{
+    background: #009688;
 }
 
-header img {
-  height: 50px;
-  padding-left: 10px;
+/*Nav Animation Styling Begins*/
+
+div.borderYtoX a:before, div.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
 }
 
-a {
-  color: seashell;
-  text-decoration: underline;
+div.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+div.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
 }
+
+div.borderYtoX a:hover:before, div.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+/*Navbar Animation Styling Ends*/
 
 
 /*Video and Title Styling Begins*/
 * {
+  z-index: 0;
   margin: 0;
   padding: 0;
 }
